@@ -1,12 +1,12 @@
-# Getting Started with Create React App
+# Foodie Formula
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repo is the code base for the Foodie Formula project in Wharton Hack-AI-thon 2024. The Foodie Formula is a project enabling people to upload photo of meals, automatically detects ingredients, and calculates relevant nutrients.
 
 ## Available Scripts
 
-In the project directory, you can run:
+To run the project on localhost, you can run:
 
-### `npm start`
+ `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
