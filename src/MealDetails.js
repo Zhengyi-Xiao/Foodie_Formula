@@ -24,11 +24,11 @@ const MealDetails = ({ meal, setMeal, file, setFile }) => {
     totalCalories += item.amountCalories || 0;
     totalWater += item.amountWater || 0;
     totalEnergy += item.amountEnergy || 0;
-    totalVitamins += item.hasNutrient.vitamins || 0;
-    totalMinerals += item.hasNutrient.minerals || 0;
-    totalProtein += item.hasNutrient.protein || 0;
-    totalCarbohydrates += item.hasNutrient.carbohydrates || 0;
-    totalFats += item.hasNutrient.fats || 0;
+    totalVitamins += item.vitamins || 0;
+    totalMinerals += item.minerals || 0;
+    totalProtein += item.protein || 0;
+    totalCarbohydrates += item.carbohydrates || 0;
+    totalFats += item.fats || 0;
   });
 
   const handleHomeClick = () => {
