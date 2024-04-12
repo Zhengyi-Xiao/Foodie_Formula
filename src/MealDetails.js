@@ -11,13 +11,13 @@ const MealDetails = ({ meal, setMeal, file, setFile }) => {
   const maxEnergy = 10000;
 
   meal["nutrients"].forEach(item => {
-    totalCalories += item.amountCalories || 0;
-    totalWater += item.amountWater || 0;
-    totalEnergy += item.amountEnergy || 0;
+    totalCalories += item?.amountCalories || 0;
+    totalWater += item?.amountWater || 0;
+    totalEnergy += item?.amountEnergy || 0;
 
-    for (const [key, value] of Object.entries(item.hasNutrient)) {
-      nutrients[key] = (nutrients[key] || 0) + value;
-    }
+    // for (const [key, value] of Object.entries(item?.hasNutrient)) {
+    //   nutrients[key] = (nutrients[key] || 0) + value;
+    // }
   });
 
   const handleHomeClick = () => {
