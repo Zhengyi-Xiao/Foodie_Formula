@@ -1,0 +1,54 @@
+.camera-container {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  width: 100%; /* Full width of the container */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.camera-container h1 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.camera-container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.camera-viewfinder {
+  width: 90%; /* Width of the camera viewfinder */
+  margin: auto;
+  height: 500px; /* Adjust the height to maintain aspect ratio */
+  background-color: #f0f0f0; /* Light grey background */
+  border: 3px dashed #000; /* Dashed border around viewfinder */
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.camera-button {
+  background-color: #fff; /* White background for the button */
+  border: 2px solid #000; /* Black border */
+  border-radius: 50%; /* Circular button */
+  width: 64px; /* Width of the button */
+  height: 64px; /* Height of the button, same as width for circle */
+  font-size: 16px;
+  line-height: 64px; /* Center the icon vertically */
+  margin-top: -32px; /* Half of the button's height to overlap */
+  cursor: pointer; /* Pointer cursor on hover */
+  position: absolute; /* Absolute positioning relative to parent */
+  bottom: 20px; /* Spacing from the bottom of the viewfinder */
+  left: 50%; /* Center the button horizontally */
+  transform: translateX(-50%); /* Align center properly */
+}
+
+.camera-icon {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}

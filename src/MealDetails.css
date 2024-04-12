@@ -1,0 +1,122 @@
+.meal-container {
+  max-width: 340px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.meal-header {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 17px;
+}
+.meal-image-container {
+  width: 150px; /* Set a fixed width */
+  height: 150px; /* Set the height equal to the width for a square */
+  background-color: transparent; /* Placeholder color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meal-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #eee; /* Light gray as a placeholder */
+}
+
+.meal-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Cover the area without breaking the aspect ratio */
+}
+
+.meal-title {
+  /* Style your title as needed */
+  font-size: 24px;
+  margin-left: 20px; /* Add space between the image and the title */
+}
+
+.ingredients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.ingredient {
+  background-color: #eee;
+  padding: 6px 19px;
+  border-radius: 20px;
+  margin: 5px;
+  max-width: 93px;
+  flex: 1 1 150px;
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.section-title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.analysis {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.home-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  width: fit-content;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nutrition-info {
+  font-family: Arial, sans-serif;
+}
+
+.nutrition-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.nutrition-label {
+  flex-basis: 20%;
+}
+
+.nutrition-bar {
+  flex-grow: 1;
+  height: 20px; /* Height of the bar */
+  background-color: #ddd;
+  margin: 0 20px;
+  position: relative;
+  border-radius: 10px; /* Optional: if you want rounded corners */
+}
+
+.nutrition-bar-value {
+  height: 100%;
+  background-color: #333;
+  border-radius: 10px; /* Optional: if you want rounded corners */
+}
+
+.nutrition-value {
+  flex-basis: 20%;
+  text-align: right;
+}
