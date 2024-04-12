@@ -41,7 +41,7 @@
   margin-top: -32px; /* Half of the button's height to overlap */
   cursor: pointer; /* Pointer cursor on hover */
   position: absolute; /* Absolute positioning relative to parent */
-  bottom: 20px; /* Spacing from the bottom of the viewfinder */
+  bottom: 74px; /* Spacing from the bottom of the viewfinder */
   left: 50%; /* Center the button horizontally */
   transform: translateX(-50%); /* Align center properly */
 }

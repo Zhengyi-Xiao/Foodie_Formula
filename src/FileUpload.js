@@ -94,22 +94,27 @@ function FileUpload({ setMeal, setFile }) {
     }
   };
 
+  const handleClick = () => {
+    // When the viewfinder is clicked, click the hidden file input
+    document.getElementById('file-upload').click();
+  };
+
   return (
     <div>
       <div className="camera-container">
         <h1>Take a picture of your meal!</h1>
         <p>Please make sure your fork is included in the picture.</p>
-        <div className="camera-viewfinder">
-          <input
-            type="file"
-            style={{ display: 'none' }}
-            id="file-upload"
-            onChange={handleFileChange}
-          />
-        </div>
-        <button className="camera-button" onClick={() => document.getElementById('file-upload').click()}>
+        <button className="camera-viewfinder" onClick={handleClick}>
+        </button>
+        <button className="camera-button" onClick={handleClick}>
           <img className="camera-icon" src={Camera} alt="React Logo" />
         </button>
+        <input
+          type="file"
+          style={{ display: 'none' }}
+          id="file-upload"
+          onChange={handleFileChange}
+        />
       </div>
     </div>
   );
